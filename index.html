@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ChocoDelight - Chocolate Shop</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fff8f0;
+    }
+    header {
+      background-color: #5e2c04;
+      color: white;
+      padding: 15px 0;
+      text-align: center;
+    }
+    nav {
+      background-color: #8b4513;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .section {
+      padding: 30px;
+      text-align: center;
+    }
+    .products img, .gallery img {
+      width: 200px;
+      height: 200px;
+      margin: 10px;
+      border-radius: 10px;
+    }
+    footer {
+      background-color: #5e2c04;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    function sendToWhatsApp() {
+      var name = document.getElementById("name").value;
+      var message = document.getElementById("message").value;
+
+      // Replace with your WhatsApp number (use country code, no + or 0)
+      var phoneNumber = "8421160915";
+      
+      var url = "https://wa.me/918421160915?text=" 
+          + encodeURIComponent("Hello, my name is " + name + ". " + message);
+
+
+      window.open(url, '_Self');
+    }
+  </script>
+
+
+  <header>
+    <h1>🍫 ChocoDelight</h1>
+    <p>Delicious Handmade Chocolates</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#products">Products</a>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section class="section" id="home">
+    <h1>Welcome to ChocoDelight</h1>
+    <p>Discover a world of rich, creamy chocolates made with love and passion.</p>
+    <P>Melts in your mouth, not in your hands.(M&M's)</P>
+    <p>The sweetest way to break the rules.(Ferrero Rocher)</p>
+  </section>
+
+  <section class="section products" id="products">
+    <h2>Our Products</h2>
+    <div>
+      <figure>
+      <img src="C:\Users\sanik\OneDrive\Desktop\sanu\c1.jpg" alt="Dark Chocolate">
+      <figcaption>DARK CHOCOLATE</figcaption>
+      <img src="C:\Users\sanik\OneDrive\Desktop\sanu\c4.jpg" alt="Milk Chocolate">
+      <figcaption>MILK CHOCOLATE</figcaption>
+      <img src="C:\Users\sanik\OneDrive\Desktop\sanu\c6.jpg" alt="Truffles">
+      <figcaption>TRUFFLES</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section class="section" id="about">
+    <h2>About Us</h2>
+    <p>ChocoDelight was founded with a simple mission: to spread happiness through chocolate. We use only the finest ingredients to craft our treats.Our intention is only
+      to spread sweetness and happyness to the world.
+    </p>
+  </section>
+
+  <section class="section gallery" id="gallery">
+    <h2>Gallery</h2>
+    <div>
+      <figure>
+      <img src="C:\Users\sanik\OneDrive\Desktop\sanu\c3.jpg" alt="Choco Box">
+      <figcaption>CHOCO BOX</figcaption>
+      </figure>
+      <figure>
+      <img src="C:\Users\sanik\OneDrive\Desktop\sanu\c2.jpg" alt="Gift Pack">
+      <figcaption>GIFT PACK</figcaption>
+      </figure>
+      <figure>
+      <img src="C:\Users\sanik\OneDrive\Desktop\sanu\c5.jpg" alt="Chocolate Bars">
+      <figcaption>CHOCOLATE BARS</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container">
+      <h2 class="section-title">Get in Touch</h2>
+      <form class="contact-form" action="#" method="post">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button type="button" class="btn" onclick="sendToWhatsApp()">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 ChocoDelight. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
